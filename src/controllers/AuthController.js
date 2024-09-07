@@ -1,5 +1,5 @@
 const usuarioRepository = require("../repositories/UsuarioRepository")
-const { Response } = require("../utils/response");
+const { Response } = require("../utils/Response");
 const JWT = require('../authorization/jwt')
 const bcrypt = require('bcrypt-nodejs')
 const crypto = require("../utils/Cryptojs")
