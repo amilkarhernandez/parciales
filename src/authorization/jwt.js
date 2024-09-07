@@ -8,7 +8,6 @@ exports.createToken = function (user) {
         nombres: user.nombres,
         apellidos: user.apellidos,
         email: user.email,
-        role: user.role,
         iat: moment().unix(),
         exp: moment().add(process.env.ACCESS_TOKEN_EXPIRE_MINUTES, 'days').unix(),
     }

@@ -58,8 +58,7 @@ function extractUserLogin(user) {
     return {
         name: user.name,
         lastname: user.lastname,
-        email: user.email,
-        typeUser: crypto.encript(user.typeUser)
+        email: user.email
     }
 }
 
