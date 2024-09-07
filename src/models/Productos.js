@@ -18,7 +18,7 @@ const ProductosSchema = schema({
         type: String,
         required: true,
     },
-    PromiseRejectionEvent: {
+    price: {
         type: Number,
         required: true,
     },
