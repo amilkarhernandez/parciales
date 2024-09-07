@@ -111,6 +111,9 @@
                 },
                 "image": {
                   "example": "any"
+                },
+                "price": {
+                  "example": "any"
                 }
               }
             }

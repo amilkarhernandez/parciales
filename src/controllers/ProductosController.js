@@ -5,7 +5,7 @@ const productoRepository = require('../repositories/ProductosRepository')
 async function registrarProductos(req, res) {
     const producto = new productoModel();
 
-    const { name, description, marca, image } = req.body;
+    const { name, description, marca, image, price } = req.body;
 
     try {
 
@@ -14,6 +14,7 @@ async function registrarProductos(req, res) {
         producto.description = description;
         producto.marca = marca;
         producto.image = image;
+        producto.price = price;
 
         // Guardar el Producto en el repositorio
         const resp = await productoRepository.createProductos(producto);

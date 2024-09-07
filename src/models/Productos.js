@@ -18,6 +18,10 @@ const ProductosSchema = schema({
         type: String,
         required: true,
     },
+    PromiseRejectionEvent: {
+        type: Number,
+        required: true,
+    },
     status: Boolean
 }, { timestamps: true });
 
