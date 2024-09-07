@@ -12,7 +12,7 @@ exports.createToken = function (user) {
         iat: moment().unix(),
         exp: moment().add(process.env.ACCESS_TOKEN_EXPIRE_MINUTES, 'days').unix(),
     }
-    return jwt.encode(payload, process.env.SECRET_KEY, process.env.ALGORITHM);
+    return jwt.encode(payload, process.env.SECRET_KEY, 'HS256');
 }
 
 exports.encript = function (field) {
