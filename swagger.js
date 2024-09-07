@@ -5,7 +5,7 @@ const doc = {
         title: 'Parcial App',
         description: 'Documentacion Api para Parcial'
     },
-    host: "localhost:3001",
+    host: "parcial.nucleoslabs.com.co",
     shemes: ['http']
 };
 

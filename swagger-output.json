@@ -5,7 +5,7 @@
     "description": "Documentacion Api para Parcial",
     "version": "1.0.0"
   },
-  "host": "localhost:3001",
+  "host": "parcial.nucleoslabs.com.co",
   "basePath": "/",
   "schemes": [
     "http"
