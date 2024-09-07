@@ -21,7 +21,7 @@
         }
       }
     },
-    "/usuarios/login": {
+    "/api/v1/usuarios/login": {
       "post": {
         "description": "",
         "parameters": [
@@ -54,7 +54,7 @@
         }
       }
     },
-    "/usuarios/registrar": {
+    "/api/v1/usuarios/registrar": {
       "post": {
         "description": "",
         "parameters": [
@@ -90,7 +90,7 @@
         }
       }
     },
-    "/productos/registrar": {
+    "/api/v1/productos/registrar": {
       "post": {
         "description": "",
         "parameters": [
@@ -129,7 +129,7 @@
         }
       }
     },
-    "/productos/listar": {
+    "/api/v1/productos/listar": {
       "get": {
         "description": "",
         "responses": {
@@ -142,7 +142,7 @@
         }
       }
     },
-    "/productos/listar/{id}": {
+    "/api/v1/productos/listar/{id}": {
       "get": {
         "description": "",
         "parameters": [
