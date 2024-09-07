@@ -6,6 +6,11 @@ const swaggerUi = require("swagger-ui-express")
 const swaggerDocument = require("./swagger-output.json")
 require("dotenv").config();
 
+//ROUTES
+const auth_routes = require('./src/routes/AuthRoutes');
+const user_routes = require('./src/routes/usuarioRoutes');
+const productos_routes = require('./src/routes/ProductosRoutes');
+
 const app = express();
 
 //Datos codifcados en URL
@@ -34,22 +39,17 @@ mongoose
         throw err;
     });
 
+//Usar las Rutas
+app.use('/api/v1', auth_routes);
+app.use('/api/v1', user_routes);
+app.use('/api/v1', productos_routes);
+
 app.get("/status", (req, res) => {
     res.status(200).send({
         success: "true",
         message: "Servidor Corriendo",
     });
 });
-
-//ROUTES
-const auth_routes = require('./src/routes/AuthRoutes');
-const user_routes = require('./src/routes/usuarioRoutes');
-const productos_routes = require('./src/routes/ProductosRoutes');
-
-//Usar las Rutas
-app.use('/api/v1', auth_routes);
-app.use('/api/v1', user_routes);
-app.use('/api/v1', productos_routes);
 
 //Swagger
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
