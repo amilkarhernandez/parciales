@@ -7,7 +7,6 @@ const doc = {
     },
     host: "parcial.nucleoslabs.com.co",
     schemes: ['https'],
-    basePath: '/api/v1',
 };
 
 const outputFile = './swagger-output.json'

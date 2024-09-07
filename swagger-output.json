@@ -6,7 +6,7 @@
     "version": "1.0.0"
   },
   "host": "parcial.nucleoslabs.com.co",
-  "basePath": "/api/v1",
+  "basePath": "/",
   "schemes": [
     "https"
   ],
