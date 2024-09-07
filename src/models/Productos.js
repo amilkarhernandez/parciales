@@ -19,7 +19,7 @@ const ProductosSchema = schema({
         required: true,
     },
     price: {
-        type: Number,
+        type: String,
         required: true,
     },
     status: Boolean
