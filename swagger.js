@@ -6,7 +6,8 @@ const doc = {
         description: 'Documentacion Api para Parcial'
     },
     host: "parcial.nucleoslabs.com.co",
-    shemes: ['https']
+    schemes: ['https'],
+    basePath: '/api/v1',
 };
 
 const outputFile = './swagger-output.json'
