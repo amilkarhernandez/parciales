@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+    nucleoslab:
+        build:
+            context: ./
+        container_name: parcial-backend
+        ports:
+            - "3001:3001"
