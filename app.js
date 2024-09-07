@@ -40,9 +40,9 @@ mongoose
     });
 
 //Usar las Rutas
-app.use('/api/v1', auth_routes);
-app.use('/api/v1', user_routes);
-app.use('/api/v1', productos_routes);
+app.use('', auth_routes);
+app.use('', user_routes);
+app.use('', productos_routes);
 
 app.get("/status", (req, res) => {
     res.status(200).send({
